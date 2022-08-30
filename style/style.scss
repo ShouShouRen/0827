@@ -117,10 +117,34 @@ section#news {
 
 section#shop {
     height: 180vh;
-    .ribbon {
-        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-        cursor: pointer;
+
+    .mycard {
+        background-color: #fff;
+        transition: all .4s;
+        position: relative;
+        overflow: hidden;
+        height: 355px + 118.4px;
+
+        .ribbon {
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            cursor: pointer;
+        }
+
+        &:hover .text {
+            transition: all .4s;
+            opacity: 1;
+            background-color: #959942;
+            height: 118.4px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+        }
+
+        .text {
+            opacity: 0;
+            text-align: left;
+            font-size: 17px;
+        }
     }
 }
-
-
