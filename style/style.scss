@@ -17,12 +17,19 @@ $custom-theme-colors: (
 $theme-colors: map-merge($custom-theme-colors, $theme-colors );
 
 @import './bootstrap.scss';
-
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    color: #fff;
+    background-color: #ed6400;
+}
 ul,
 li {
     list-style: none;
 }
-
+p{
+    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 27.2px;
+}
 img {
     width: 100%;
 }
@@ -159,6 +166,14 @@ section#shop {
             opacity: 0;
             text-align: left;
             font-size: 17px;
+        }
+    }
+}
+#key{
+    .col-10{
+        // margin-left: 80px;
+        @media (max-width: 768px) {
+            margin: 0;
         }
     }
 }

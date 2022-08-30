@@ -11495,9 +11495,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #ed6400;
+}
+
 ul,
 li {
   list-style: none;
+}
+
+p {
+  letter-spacing: 2px;
+  font-size: 17px;
+  line-height: 27.2px;
 }
 
 img {
@@ -11627,4 +11638,10 @@ section#shop .mycard .text {
   opacity: 0;
   text-align: left;
   font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  #key .col-10 {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
