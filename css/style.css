@@ -11600,6 +11600,7 @@ section#shop .mycard .ribbon {
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 section#shop .mycard:hover .text {
   transition: all 0.4s;
@@ -11610,6 +11611,17 @@ section#shop .mycard:hover .text {
   position: absolute;
   bottom: 0;
   color: #fff;
+}
+section#shop .mycard:hover .ribbon {
+  width: 250px;
+}
+section#shop .mycard:hover .ribbon::before {
+  content: "加入購物車";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  display: inline-block;
+  font-size: 17px;
 }
 section#shop .mycard .text {
   opacity: 0;

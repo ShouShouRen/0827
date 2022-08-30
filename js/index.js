@@ -18,3 +18,4 @@ $('.nav-link,a').click(function () {
     scrollTop: st
   }, 500);
 });
+

@@ -128,6 +128,7 @@ section#shop {
         .ribbon {
             clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
             cursor: pointer;
+            transition: all .4s ease;
         }
 
         &:hover .text {
@@ -140,7 +141,17 @@ section#shop {
             bottom: 0;
             color: #fff;
         }
-
+        &:hover .ribbon{
+            width: 250px;
+            &::before{
+                content: "加入購物車";
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 50px;
+                display: inline-block;
+                font-size: 17px;
+            }
+        }
         .text {
             opacity: 0;
             text-align: left;
