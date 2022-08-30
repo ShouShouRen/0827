@@ -141,9 +141,11 @@ section#shop {
             bottom: 0;
             color: #fff;
         }
-        &:hover .ribbon{
+
+        &:hover .ribbon {
             width: 250px;
-            &::before{
+
+            &::before {
                 content: "加入購物車";
                 padding-top: 20px;
                 padding-bottom: 20px;
@@ -152,6 +154,7 @@ section#shop {
                 font-size: 17px;
             }
         }
+
         .text {
             opacity: 0;
             text-align: left;
