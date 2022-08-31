@@ -297,18 +297,94 @@
             <div class="container">
                 <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
                 <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <h3>Title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis nemo, iste repellendus magni cum corrupti recusandae, quaerat maiores ullam quam! Eum ipsa voluptates autem, dolorem quisquam numquam asperiores dolores.</p>
+                    <div class="col-lg-4">
+                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">自然</h3>
+                            <div class="line" style="border-left: 3px solid #959942;
+                            width: 10%;"></div>
+                            <p class="h-50">
+                                厚德自然農場全區皆不使用農藥及除草劑，以避免有任何化學物質殘留，吃進身體影響健康。因此在種植的過程中我們飼養放山雞在苦茶樹下面，讓雞來吃蟲吃雜草，雞糞再變成樹木的肥料</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h3>Title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis nemo, iste repellendus magni cum corrupti recusandae, quaerat maiores ullam quam! Eum ipsa voluptates autem, dolorem quisquam numquam asperiores dolores.</p>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">安心</h3>
+                            <div class="line" style="border-left: 3px solid #959942;
+                            width: 10%;"></div>
+                            <p class="h-50">而放山雞也因為整天在外運動，抵抗力比養在籠子裡的雞還要好，因此根本不需要打針用藥，如此的循環才是我們理想中與自然和諧相處的方式。</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">健康</h3>
+                            <div class="line" style="border-left: 3px solid #959942;
+                            width: 10%;"></div>
+                            <p class="h-50">本農場注重養身健康，以無毒無害為原則不管是在種植養殖都層層遵守我們的原則，希望消費者吃得健康又安心，也同時保護到大自然環境，可說是一舉兩得。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-orange text-center text-[30px] fw-bolder m-0">意見回饋</h2>
+            <div class="row  pt-[140px] ">
+                <div class="col-lg-6">
+                    <div class="flex justify-content-evenly align-items-center">
+                        <label for="name" class="text-[22px]">
+                            姓名:
+                        </label>
+                        <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                    </div>
+                    <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                        <label for="name" class="text-[22px]">
+                            手機:
+                        </label>
+                        <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                    </div>
+                    <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                        <label for="name" class="text-[22px]">
+                            E-mail:
+                        </label>
+                        <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="flex justify-content-evenly align-items-start">
+                        <label for="text" class="text-[22px]">
+                            留言:
+                        </label>
+                        <textarea id="text" class="w-[500px] h-[300px] form-control rounded-5 p-3"
+                            placeholder="請輸入您的留言"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-content-center mt-5">
+                <button class="btn btn-lg px-5 btn-primary rounded-pill submit" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">送出留言</button>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">已送出</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    資料送出成功，感謝您的留言厚德農場會盡快回復您!!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger text-black" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/index.js"></script>

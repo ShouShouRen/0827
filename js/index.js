@@ -19,3 +19,6 @@ $('.nav-link,a').click(function () {
   }, 500);
 });
 
+$('.submit').click(function() {
+  $('input').val('');
+})
