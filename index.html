@@ -44,6 +44,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">意見回饋</a>
                         </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-cart-shopping"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -170,8 +173,8 @@
                     <div class="col-lg-4" v-for="product in products">
                         <div class="p-2">
                             <div class="mycard position-relative">
-                                <div
-                                    class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
+                                <div class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]"
+                                    @click="product.amountShow++">
                                     <i
                                         class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
                                 </div>
@@ -266,7 +269,7 @@
                 </div>
                 <div class="flex justify-content-center mt-5">
                     <button class="btn btn-lg px-5 btn-primary rounded-pill submit" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">送出留言</button>
+                        data-bs-target="#submit">送出留言</button>
                 </div>
             </div>
         </section>
@@ -274,11 +277,11 @@
 
         </footer>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">已送出</h5>
+                        <h5 class="modal-title" id="submitLabel">已送出</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -290,12 +293,31 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/vue@3"></script>
+<script src="./js/jquery.js"></script>
 <script src="./js/all.js"></script>
 <script src="./js/index.js"></script>
-<script src="./js/jquery.js"></script>
 
 </html>
