@@ -52,5 +52,10 @@ Vue.createApp({
         },
       ]
     }
+  },
+  methods: {
+    addCart() {
+      console.log('text');
+    }
   }
 }).mount("#app");
