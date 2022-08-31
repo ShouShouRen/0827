@@ -17,377 +17,285 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-bluer lg:h-[155px] ">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mb-2 mb-lg-0 text-[20px] text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#story">品牌故事</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">最新消息</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#shop">我要購買</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#key">經營理念</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">意見回饋</a>
-                    </li>
-                </ul>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-bluer lg:h-[155px] ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-[20px] text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#story">品牌故事</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shop">我要購買</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#key">經營理念</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">意見回饋</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/slider-a.jpg" class="d-block object-cover vh-100 w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/slider-a.jpg" class="d-block object-cover vh-100 w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5> 
                     <p>Some representative placeholder content for the first slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/slider-b.jpg" class="d-block object-cover vh-100 w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slider-b.jpg" class="d-block object-cover vh-100 w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/slider-c.jpg" class="d-block object-cover vh-100 w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slider-c.jpg" class="d-block object-cover vh-100 w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div> -->
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <section id="story">
-        <div class="container">
-            <h2 class="text-orange text-center text-[30px] fw-bolder m-0">品牌故事</h2>
-            <div class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
-                <div class=" col-lg-5 col-md-9 p-3">
-                    <p>
-                        「厚德自然農場」由一位熱血青農所經營，因為喜歡大自然而從事農業，目標是建立一個無毒無農藥的自然農場，生產出安心的食物來回饋支持厚德小農的朋友們。
-                    </p>
-                    <h3 class="text-green text-[22px] fw-bolder py-5">厚德自然農場的由來</h3>
-                    <p>
-                        1. 取自易經『厚德載物』啟發，要求自己在種植的品德上，如大地之深厚，讓人們吃的放心。
-                        <br>2. 英文 HODER 諧音，齁得…住，讓支持厚德自然農場的朋友們，在吃的方面可以健康又安心，將食安品質交給我們把關，我們 HODER 住。
-                    </p>
-                    <h3 class="text-green text-[22px] fw-bolder py-5">為台灣農業永續發展盡一份心力</h3>
-                    <p>
-                        現在台灣農業人力缺乏，鄉下人口老化嚴重，因為很久沒看到年輕人從事農業，在無人承接的情況下，許多
-                        農地漸漸都荒廢了，因此我們期許自己希望能夠種植出好的食物外還能夠幫助
-                        更多的農民推廣最健康好吃的產品，來回饋支持厚德小農的朋友們，也讓更多
-                        人都能了解到，務農是一份值得投入的行業，鼓勵更多年青人加入農業行列，
-                        讓台灣農業可以不間斷的永續發展。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="news"
-        style="background-image: url(./images/new-bg.jpg); background-size: cover; background-repeat: no-repeat;  background-position: center;">
-        <div class="container">
-            <h2 class="text-orange text-center text-[30px] fw-bolder m-0">最新消息</h2>
-            <div class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
-                <div class="col-sm-12 col-lg-4">
-                    <div class="overflow-hidden p-3">
-                        <div class="overflow-hidden">
-                            <img src="./images/new-a.jpg"
-                                class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]" alt="">
-                        </div>
-                        <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                            <h4 class="text-[22px] text-center py-4">美味窯烤放山雞冷凍包新上市</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="overflow-hidden p-3">
-                        <div class="overflow-hidden">
-                            <img src="./images/new-b.jpg"
-                                class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]" alt="">
-                        </div>
-                        <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                            <h4 class="text-[22px] text-center py-4">當日現擠牛奶新上市</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="overflow-hidden p-3">
-                        <div class="overflow-hidden">
-                            <img src="./images/new-c.jpg"
-                                class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]" alt="">
-                        </div>
-                        <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                            <h4 class="text-[22px] text-center py-4">本農場蔬食打9折</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="shop" class="bg-lightgreen">
-        <div class="container">
-            <h2 class="text-orange text-center text-[30px] fw-bolder m-0">我要購買</h2>
-            <div class="row pt-[40px]">
-                <div class="col-lg-4" v-for="product,idx in products">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-a.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">美味烤雞</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $360
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>飼養在深山裡的放山雞，本農場將雞高溫烘烤製成快速又方便的調理包，加熱僅可使用</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-b.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">新鮮牛乳</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $30
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>每日限量新鮮牛乳由農場本人親自擠乳，經儀器測量乳含量高打99%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-c.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">放山雞雞蛋12入</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $120
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>新鮮放山雞蛋一盒只需要120元，每日一蛋健康又營養</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-[28px]">
-                <div class="col-lg-4">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-d.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">頻果12入</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $200
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>香甜蘋果色澤紅潤，無添加臘模清洗後即可食用</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-e.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">夏日西瓜一顆</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $60
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>夏日炎炎，消暑必備的西瓜一顆60元數量有限，要買要快！</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-2">
-                        <div class="mycard position-relative">
-                            <div
-                                class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
-                                <i
-                                    class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
-                            </div>
-                            <img src="./images/shop-f.jpg" class="w-[448px] h-[355px] object-cover w-100" alt="">
-                            <div class="text-center">
-                                <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">有機菠菜1把</h4>
-                                <span class="text-danger pb-[25px] inline-block">
-                                    NT $40
-                                </span>
-                            </div>
-                            <div class="text p-4">
-                                <p>有機菠菜農場栽種，無化學農藥讓您吃的健康又安心</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="key">
-        <div class="bable">
+        <section id="story">
             <div class="container">
-                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
-                <div class="row mt-5">
-                    <div class="col-lg-4">
-                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
-                            <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">自然</h3>
-                            <div class="line" style="border-left: 3px solid #959942;
-                            width: 10%;"></div>
-                            <p class="h-50">
-                                厚德自然農場全區皆不使用農藥及除草劑，以避免有任何化學物質殘留，吃進身體影響健康。因此在種植的過程中我們飼養放山雞在苦茶樹下面，讓雞來吃蟲吃雜草，雞糞再變成樹木的肥料</p>
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">品牌故事</h2>
+                <div
+                    class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
+                    <div class=" col-lg-5 col-md-9 p-3">
+                        <p>
+                            「厚德自然農場」由一位熱血青農所經營，因為喜歡大自然而從事農業，目標是建立一個無毒無農藥的自然農場，生產出安心的食物來回饋支持厚德小農的朋友們。
+                        </p>
+                        <h3 class="text-green text-[22px] fw-bolder py-5">厚德自然農場的由來</h3>
+                        <p>
+                            1. 取自易經『厚德載物』啟發，要求自己在種植的品德上，如大地之深厚，讓人們吃的放心。
+                            <br>2. 英文 HODER 諧音，齁得…住，讓支持厚德自然農場的朋友們，在吃的方面可以健康又安心，將食安品質交給我們把關，我們 HODER 住。
+                        </p>
+                        <h3 class="text-green text-[22px] fw-bolder py-5">為台灣農業永續發展盡一份心力</h3>
+                        <p>
+                            現在台灣農業人力缺乏，鄉下人口老化嚴重，因為很久沒看到年輕人從事農業，在無人承接的情況下，許多
+                            農地漸漸都荒廢了，因此我們期許自己希望能夠種植出好的食物外還能夠幫助
+                            更多的農民推廣最健康好吃的產品，來回饋支持厚德小農的朋友們，也讓更多
+                            人都能了解到，務農是一份值得投入的行業，鼓勵更多年青人加入農業行列，
+                            讓台灣農業可以不間斷的永續發展。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news"
+            style="background-image: url(./images/new-bg.jpg); background-size: cover; background-repeat: no-repeat;  background-position: center;">
+            <div class="container">
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">最新消息</h2>
+                <div
+                    class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="overflow-hidden p-3">
+                            <div class="overflow-hidden">
+                                <img src="./images/new-a.jpg"
+                                    class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
+                                    alt="">
+                            </div>
+                            <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
+                                <h4 class="text-[22px] text-center py-4">美味窯烤放山雞冷凍包新上市</h4>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="overflow-hidden p-3">
+                            <div class="overflow-hidden">
+                                <img src="./images/new-b.jpg"
+                                    class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
+                                    alt="">
+                            </div>
+                            <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
+                                <h4 class="text-[22px] text-center py-4">當日現擠牛奶新上市</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="overflow-hidden p-3">
+                            <div class="overflow-hidden">
+                                <img src="./images/new-c.jpg"
+                                    class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
+                                    alt="">
+                            </div>
+                            <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
+                                <h4 class="text-[22px] text-center py-4">本農場蔬食打9折</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shop" class="bg-lightgreen">
+            <div class="container">
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">我要購買</h2>
+                <div class="row pt-[40px]">
+                    <div class="col-lg-4" v-for="product in products">
+                        <div class="p-2">
+                            <div class="mycard position-relative">
+                                <div
+                                    class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]">
+                                    <i
+                                        class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
+                                </div>
+                                <img :src="product.img" class="w-[448px] h-[355px] object-cover w-100" alt="">
+                                <div class="text-center">
+                                    <h4 class="pt-[22px] pb-[13px] text-[22px] text-darkblue fw-bold">{{product.title}}
+                                    </h4>
+                                    <span class="text-danger pb-[25px] inline-block">
+                                        NT ${{product.price}}
+                                    </span>
+                                </div>
+                                <div class="text p-4">
+                                    <p>{{product.content}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="key">
+            <div class="bable">
+                <div class="container">
+                    <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                                <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">自然</h3>
+                                <div class="line" style="border-left: 3px solid #959942;
+                            width: 10%;"></div>
+                                <p class="h-50">
+                                    厚德自然農場全區皆不使用農藥及除草劑，以避免有任何化學物質殘留，吃進身體影響健康。因此在種植的過程中我們飼養放山雞在苦茶樹下面，讓雞來吃蟲吃雜草，雞糞再變成樹木的肥料
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="col-lg-4">
-                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
-                            <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">安心</h3>
-                            <div class="line" style="border-left: 3px solid #959942;
+                        <div class="col-lg-4">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                                <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">安心</h3>
+                                <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
-                            <p class="h-50">而放山雞也因為整天在外運動，抵抗力比養在籠子裡的雞還要好，因此根本不需要打針用藥，如此的循環才是我們理想中與自然和諧相處的方式。</p>
+                                <p class="h-50">而放山雞也因為整天在外運動，抵抗力比養在籠子裡的雞還要好，因此根本不需要打針用藥，如此的循環才是我們理想中與自然和諧相處的方式。</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4">
-                        <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
-                            <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">健康</h3>
-                            <div class="line" style="border-left: 3px solid #959942;
+                        <div class="col-lg-4">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                                <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">健康</h3>
+                                <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
-                            <p class="h-50">本農場注重養身健康，以無毒無害為原則不管是在種植養殖都層層遵守我們的原則，希望消費者吃得健康又安心，也同時保護到大自然環境，可說是一舉兩得。</p>
+                                <p class="h-50">本農場注重養身健康，以無毒無害為原則不管是在種植養殖都層層遵守我們的原則，希望消費者吃得健康又安心，也同時保護到大自然環境，可說是一舉兩得。
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-orange text-center text-[30px] fw-bolder m-0">意見回饋</h2>
-            <div class="row  pt-[140px] ">
-                <div class="col-lg-6">
-                    <div class="flex justify-content-evenly align-items-center">
-                        <label for="name" class="text-[22px]">
-                            姓名:
-                        </label>
-                        <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]">
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">意見回饋</h2>
+                <div class="row  pt-[140px] ">
+                    <div class="col-lg-6">
+                        <div class="flex justify-content-evenly align-items-center">
+                            <label for="name" class="text-[22px]">
+                                姓名:
+                            </label>
+                            <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                        </div>
+                        <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                            <label for="name" class="text-[22px]">
+                                手機:
+                            </label>
+                            <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                        </div>
+                        <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                            <label for="name" class="text-[22px]">
+                                E-mail:
+                            </label>
+                            <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                        </div>
                     </div>
-                    <div class="flex justify-content-evenly align-items-center pt-[60px]">
-                        <label for="name" class="text-[22px]">
-                            手機:
-                        </label>
-                        <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]">
-                    </div>
-                    <div class="flex justify-content-evenly align-items-center pt-[60px]">
-                        <label for="name" class="text-[22px]">
-                            E-mail:
-                        </label>
-                        <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                    <div class="col-lg-6">
+                        <div class="flex justify-content-evenly align-items-start">
+                            <label for="text" class="text-[22px]">
+                                留言:
+                            </label>
+                            <textarea id="text" class="w-[500px] h-[300px] form-control rounded-5 p-3"
+                                placeholder="請輸入您的留言"></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="flex justify-content-evenly align-items-start">
-                        <label for="text" class="text-[22px]">
-                            留言:
-                        </label>
-                        <textarea id="text" class="w-[500px] h-[300px] form-control rounded-5 p-3"
-                            placeholder="請輸入您的留言"></textarea>
-                    </div>
+                <div class="flex justify-content-center mt-5">
+                    <button class="btn btn-lg px-5 btn-primary rounded-pill submit" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">送出留言</button>
                 </div>
             </div>
-            <div class="flex justify-content-center mt-5">
-                <button class="btn btn-lg px-5 btn-primary rounded-pill submit" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">送出留言</button>
-            </div>
-        </div>
-    </section>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">已送出</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    資料送出成功，感謝您的留言厚德農場會盡快回復您!!!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger text-black" data-bs-dismiss="modal">關閉</button>
+        </section>
+        <footer>
+
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">已送出</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        資料送出成功，感謝您的留言厚德農場會盡快回復您!!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger text-black" data-bs-dismiss="modal">關閉</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="./js/jquery.js"></script>
-<script src="./js/index.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/vue@3"></script>
+<script src="./js/all.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/jquery.js"></script>
 
 </html>
