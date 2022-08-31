@@ -11518,7 +11518,7 @@ img {
 
 section {
   padding-top: 70px;
-  height: 130vh;
+  height: 100vh;
 }
 
 @media (max-width: 1400px) {
@@ -11594,14 +11594,11 @@ section {
   background-repeat: no-repeat;
 }
 
-section#news {
-  height: 100vh;
+section#shop, section#story {
+  height: 100%;
+  padding-bottom: 80px;
 }
-
-section#shop {
-  height: 150vh;
-}
-section#shop .mycard {
+section#shop .mycard, section#story .mycard {
   background-color: #fff;
   transition: all 0.4s;
   position: relative;
@@ -11609,13 +11606,13 @@ section#shop .mycard {
   height: 473.4px;
   z-index: 2;
 }
-section#shop .mycard .ribbon {
+section#shop .mycard .ribbon, section#story .mycard .ribbon {
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
   cursor: pointer;
   transition: all 0.4s ease;
 }
-section#shop .mycard:hover .text {
+section#shop .mycard:hover .text, section#story .mycard:hover .text {
   transition: all 0.4s;
   opacity: 1;
   background-color: #959942;
@@ -11625,10 +11622,10 @@ section#shop .mycard:hover .text {
   bottom: 0;
   color: #fff;
 }
-section#shop .mycard:hover .ribbon {
+section#shop .mycard:hover .ribbon, section#story .mycard:hover .ribbon {
   width: 250px;
 }
-section#shop .mycard:hover .ribbon::before {
+section#shop .mycard:hover .ribbon::before, section#story .mycard:hover .ribbon::before {
   content: "加入購物車";
   padding-top: 20px;
   padding-bottom: 20px;
@@ -11636,7 +11633,7 @@ section#shop .mycard:hover .ribbon::before {
   display: inline-block;
   font-size: 17px;
 }
-section#shop .mycard .text {
+section#shop .mycard .text, section#story .mycard .text {
   opacity: 0;
   text-align: left;
   font-size: 17px;

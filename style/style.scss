@@ -41,7 +41,7 @@ img {
 
 section {
     padding-top: 70px;
-    height: 130vh;
+    height: 100vh;
 }
 
 @media (max-width: 1400px) {
@@ -123,13 +123,10 @@ section {
     background-repeat: no-repeat;
 }
 
-section#news {
-    height: 100vh;
-}
 
-section#shop {
-    height: 150vh;
-
+section#shop ,section#story{
+    height: 100%;
+    padding-bottom: 80px;
     .mycard {
         background-color: #fff;
         transition: all .4s;
@@ -198,8 +195,6 @@ section#shop {
                 480px 9px 0 60px #fff,
                 690px 71px 0 60px #fff,
                 880px 0 0 89px #fff,
-
-
 
                 -178px 0 0 30px #fff,
                 -327px 34px 0 20px #fff,
