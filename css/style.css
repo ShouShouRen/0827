@@ -11495,7 +11495,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #fff;
   background-color: #ed6400;
 }
@@ -11598,7 +11599,7 @@ section#news {
 }
 
 section#shop {
-  height: 180vh;
+  height: 150vh;
 }
 section#shop .mycard {
   background-color: #fff;
@@ -11606,6 +11607,7 @@ section#shop .mycard {
   position: relative;
   overflow: hidden;
   height: 473.4px;
+  z-index: 2;
 }
 section#shop .mycard .ribbon {
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
@@ -11640,8 +11642,28 @@ section#shop .mycard .text {
   font-size: 17px;
 }
 
-@media (max-width: 768px) {
-  #key .col-10 {
-    margin: 0;
+#key .bable {
+  position: relative;
+}
+#key .bable::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-30%) translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 178px 0 0 30px #fff, 327px 34px 0 20px #fff, 480px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -327px 34px 0 20px #fff, -480px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff;
+}
+@media (max-width: 1440px) {
+  #key .bable::after {
+    display: none;
   }
+}
+#key .container {
+  position: relative;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
