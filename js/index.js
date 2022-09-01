@@ -62,9 +62,6 @@ Vue.createApp({
     sub(){
       return this.products.map(data => data.price * data.amountShow)
     },
-    num() {
-      return this.amountShow
-    },
     total() {
       return this.sub.reduce((a,b )=> a+b)
     },
