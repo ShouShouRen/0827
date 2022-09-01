@@ -1,5 +1,5 @@
 // customized
-$primary: #959942;
+$primary: #99a04b;
 $secondary: #e2e2e2;
 $light: #f2f2f2;
 
@@ -10,7 +10,7 @@ $custom-theme-colors: (
     'blacks': #505050,
     'orange': #ED6400,
     'oranges':#FFD0A8,
-    'green':#959942,
+    'green':#999d6a,
     'darkblue':#005E93,
     'lightgreen':#e1e7e2,
 );
@@ -147,7 +147,7 @@ section#story {
         &:hover .text {
             transition: all .4s;
             opacity: 1;
-            background-color: #959942;
+            background-color: #999d6a;
             height: 118.4px;
             width: 100%;
             position: absolute;
