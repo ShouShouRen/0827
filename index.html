@@ -28,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav mb-2 mb-lg-0 text-[20px] text-center">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-[20px] text-center align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#story">品牌故事</a>
                         </li>
@@ -45,7 +45,8 @@
                             <a class="nav-link" href="#contact">意見回饋</a>
                         </li>
                         <li class="nav-item">
-                            <i class="fa-solid fa-cart-shopping cursor-pointer"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+                            <i class="fa-solid fa-cart-shopping cursor-pointer" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">購物車</i>
                         </li>
                     </ul>
                 </div>
@@ -128,7 +129,7 @@
                 <div
                     class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
                     <div class="col-sm-12 col-lg-4">
-                        <div class="overflow-hidden p-3">
+                        <div class="rounded-3 overflow-hidden m-3">
                             <div class="overflow-hidden">
                                 <img src="./images/new-a.jpg"
                                     class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
@@ -140,7 +141,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-4">
-                        <div class="overflow-hidden p-3">
+                        <div class="rounded-3 overflow-hidden m-3">
                             <div class="overflow-hidden">
                                 <img src="./images/new-b.jpg"
                                     class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
@@ -152,7 +153,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-4">
-                        <div class="overflow-hidden p-3">
+                        <div class="rounded-3 overflow-hidden m-3">
                             <div class="overflow-hidden">
                                 <img src="./images/new-c.jpg"
                                     class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
@@ -172,9 +173,10 @@
                 <div class="row pt-[40px]">
                     <div class="col-lg-4" v-for="product in products">
                         <div class="p-2">
-                            <div class="mycard position-relative">
+                            <div class="mycard position-relative rounded-2">
                                 <div class="ribbon position-absolute top-[25px] right-[0px] text-center text-white bg-green w-[122px] h-[66px]"
-                                    @click="addCart">
+                                @click="plus(product)" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                     <i
                                         class="text-[2.5em] position-absolute right-[25%] top-[25%] fa-solid fa-cart-plus"></i>
                                 </div>
@@ -201,7 +203,7 @@
                     <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
                     <div class="row mt-5">
                         <div class="col-lg-4">
-                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
                                 <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">自然</h3>
                                 <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
@@ -211,7 +213,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
                                 <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">安心</h3>
                                 <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
@@ -220,7 +222,7 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-5">
+                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
                                 <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">健康</h3>
                                 <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
@@ -261,7 +263,7 @@
                             <label for="text" class="text-[22px]">
                                 留言:
                             </label>
-                            <textarea id="text" class="w-[500px] h-[300px] form-control rounded-5 p-3"
+                            <textarea id="text" class="w-[500px] h-[300px] form-control rounded-4 p-3"
                                 placeholder="請輸入您的留言"></textarea>
                         </div>
                     </div>
@@ -298,15 +300,32 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="staticBackdropLabel">購物車</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="flex justify-content-start">
+                            <h3 class="p-2">品名</h3>
+                            <h3 class="p-2">品名</h3>
+                            <h3 class="p-2">品名</h3>
+                        </div>
+                        <hr>
+                        <template v-for="product,idx in products">
+                            <div class="flex justify-content-between items-center">
+                                <h3 class="py-2">{{product.title}}</h3>
+                                <div class="flex justify-content-around items-center text-[20px]">
+                                    <span>{{sub[idx]}}元</span>
+                                    <i class="fa-solid fa-circle-minus" @click="minus(product)"></i>
+                                    <input type="text" class="form-control w-25 m-2" v-model="product.amountShow">
+                                    <i class="fa-solid fa-circle-plus" @click="plus(product)"></i>
+                                </div>
+                            </div>
+                        </template>
+                        總共{{total}}元
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">繼續購物</button>
+                        <button type="button" class="btn btn-primary">送出</button>
                     </div>
                 </div>
             </div>
