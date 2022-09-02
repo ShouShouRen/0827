@@ -21,4 +21,10 @@ $(document).ready(function () {
     $('.submit').click(function() {
       $('input').val('');
     })
+
+    $('.price-box').submit(function () {
+      alert('目前尚無網路 請稍後再試')
+      $('.price-box input').val();
+      return false
+    });
 });

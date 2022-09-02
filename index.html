@@ -242,19 +242,19 @@
                             <label for="name" class="text-[22px]">
                                 姓名:
                             </label>
-                            <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                            <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]" placeholder="請輸入姓名" required>
                         </div>
                         <div class="flex justify-content-evenly align-items-center pt-[60px]">
                             <label for="name" class="text-[22px]">
                                 手機:
                             </label>
-                            <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                            <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]" placeholder="請輸入手機" required>
                         </div>
                         <div class="flex justify-content-evenly align-items-center pt-[60px]">
                             <label for="name" class="text-[22px]">
                                 E-mail:
                             </label>
-                            <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]">
+                            <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]" placeholder="請輸入E-mail" required>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -263,7 +263,7 @@
                                 留言:
                             </label>
                             <textarea id="text" class="w-[500px] h-[300px] form-control rounded-4 p-3"
-                                placeholder="請輸入您的留言"></textarea>
+                                placeholder="請輸入您的留言" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -323,14 +323,21 @@
                         <div class="text-right text-danger fz-20">總共{{total}}元</div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">繼續購物</button>
-                        <button type="button" class="btn btn-primary">確認購物</button>
+                        <form action="" class="price-box">
+                            <div>
+                                <input type="text" class="w-50 form-control" required placeholder="請輸入姓名">
+                                <input type="email" class="w-50 form-control" required placeholder="請輸入E-mail">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">繼續購物</button>
+                                <button type="button" class="btn btn-primary">確認購物</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <input type="submit" id="subs">
 </body>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/vue-global.js"></script>
