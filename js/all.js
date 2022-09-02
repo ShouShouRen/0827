@@ -19,12 +19,11 @@ $(document).ready(function () {
     });
     
     $('.submit').click(function() {
-      $('input').val('');
+      $('#contact input').val('');
     })
 
-    $('.price-box').submit(function () {
-      alert('目前尚無網路 請稍後再試')
-      $('.price-box input').val();
-      return false
-    });
+    $('.modal-footer .clearcart').click(function() {
+      alert("感謝您的購買本農場會儘速送達！！！")
+      location.reload();
+    })
 });
