@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#contact">意見回饋</a>
                         </li>
                         <li class="nav-item">
-                            <i class="fa-solid fa-cart-shopping cursor-pointer" data-bs-toggle="modal"
+                            <i class="fa-solid fa-cart-shopping cursor-pointer text-orange" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">購物車</i>
                         </li>
                     </ul>
@@ -317,9 +317,9 @@
                                 <h3 class="py-2">{{product.title}}</h3>
                                 <div class="flex justify-content-around items-center text-[20px]">
                                     <span>{{sub[idx]}}元</span>
-                                    <i class="fa-solid fa-circle-minus cursor-pointer" text-[#99a04b] @click="minus(product)"></i>
+                                    <i class="fa-solid fa-circle-minus cursor-pointer text-[#99a04b]" @click="minus(product)"></i>
                                     <input type="text" class="form-control w-25 m-2" v-model="product.amountShow">
-                                    <i class="fa-solid fa-circle-plus cursor-pointer" text-[#99a04b] @click="plus(product)"></i>
+                                    <i class="fa-solid fa-circle-plus cursor-pointer text-[#99a04b]" @click="plus(product)"></i>
                                 </div>
                             </div>
                         </template>
