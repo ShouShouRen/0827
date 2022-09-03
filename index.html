@@ -123,44 +123,20 @@
             </div>
         </section>
         <section id="news"
-            style="background-image: url(./images/new-bg.jpg); background-size: cover; background-repeat: no-repeat;  background-position: center;">
+            style="background-image: url('./images/new-bg.jpg'); background-size: cover; background-repeat: no-repeat;  background-position: center;">
             <div class="container">
                 <h2 class="text-orange text-center text-[30px] fw-bolder m-0">最新消息</h2>
                 <div
                     class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
-                    <div class="col-sm-12 col-lg-4">
+                    <div class="col-sm-12 col-lg-4" v-for="nes in ness">
                         <div class="rounded-3 overflow-hidden m-3">
                             <div class="overflow-hidden">
-                                <img src="./images/new-a.jpg"
+                                <img :src="nes.img"
                                     class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
                                     alt="">
                             </div>
                             <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                                <h4 class="text-[22px] text-center py-4">美味窯烤放山雞冷凍包新上市</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="rounded-3 overflow-hidden m-3">
-                            <div class="overflow-hidden">
-                                <img src="./images/new-b.jpg"
-                                    class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
-                                    alt="">
-                            </div>
-                            <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                                <h4 class="text-[22px] text-center py-4">當日現擠牛奶新上市</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="rounded-3 overflow-hidden m-3">
-                            <div class="overflow-hidden">
-                                <img src="./images/new-c.jpg"
-                                    class="object-cover w-[488px] h-[360px] w-100 hover:scale-[1.2] transition-[3s]"
-                                    alt="">
-                            </div>
-                            <div class="top-[-90px] bg-[#505050cc] text-light h-[90px]">
-                                <h4 class="text-[22px] text-center py-4">本農場蔬食打9折</h4>
+                                <h4 class="text-[22px] text-center py-4">{{nes.title}}</h4>
                             </div>
                         </div>
                     </div>
@@ -201,31 +177,13 @@
                 <div class="container">
                     <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
                     <div class="row mt-5">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" v-for="key in keys">
                             <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
-                                <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">自然</h3>
+                                <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">{{key.title}}</h3>
                                 <div class="line" style="border-left: 3px solid #959942;
                             width: 10%;"></div>
                                 <p class="h-50">
-                                    厚德自然農場全區皆不使用農藥及除草劑，以避免有任何化學物質殘留，吃進身體影響健康。因此在種植的過程中我們飼養放山雞在苦茶樹下面，讓雞來吃蟲吃雜草，雞糞再變成樹木的肥料
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
-                                <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">安心</h3>
-                                <div class="line" style="border-left: 3px solid #959942;
-                            width: 10%;"></div>
-                                <p class="h-50">放山雞也因為整天在外運動，抵抗力比養在籠子裡的雞還要好，因此根本不需要打針用藥，如此的循環才是我們理想中與自然和諧相處的方式。</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="bg-light flex justify-content-evenly p-5 m-3 rounded-4">
-                                <h3 class="pe-3 text-[40px] text-darkblue fw-bolder">健康</h3>
-                                <div class="line" style="border-left: 3px solid #959942;
-                            width: 10%;"></div>
-                                <p class="h-50">本農場注重養身健康，以無毒無害為原則不管是在種植養殖都層層遵守我們的原則，希望消費者吃得健康又安心，也同時保護到大自然環境，可說是一舉兩得。
+                                    {{key.content}}
                                 </p>
                             </div>
                         </div>
@@ -317,15 +275,17 @@
                                 <h3 class="py-2">{{product.title}}</h3>
                                 <div class="flex justify-content-around items-center text-[20px]">
                                     <span>{{sub[idx]}}元</span>
-                                    <i class="fa-solid fa-circle-minus cursor-pointer text-[#99a04b]" @click="minus(product)"></i>
+                                    <i class="fa-solid fa-circle-minus cursor-pointer text-[#99a04b]"
+                                        @click="minus(product)"></i>
                                     <input type="text" class="form-control w-25 m-2" v-model="product.amountShow">
-                                    <i class="fa-solid fa-circle-plus cursor-pointer text-[#99a04b]" @click="plus(product)"></i>
+                                    <i class="fa-solid fa-circle-plus cursor-pointer text-[#99a04b]"
+                                        @click="plus(product)"></i>
                                 </div>
                             </div>
                         </template>
                         <div class="flex p-2">
-                                <input type="text" class="w-50 form-control m-2" required placeholder="請輸入姓名">
-                                <input type="text" class="w-50 form-control m-2" required placeholder="請輸入地址">
+                            <input type="text" class="w-50 form-control m-2" required placeholder="請輸入姓名">
+                            <input type="text" class="w-50 form-control m-2" required placeholder="請輸入地址">
                         </div>
                         <div class="text-right text-danger fz-20">總共{{total}}元</div>
                     </div>
