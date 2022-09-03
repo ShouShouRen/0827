@@ -11581,12 +11581,30 @@ section {
   width: 100%;
 }
 
-#story {
-  background-image: url("../images/Group 41.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+#story .bable {
+  position: relative;
+}
+#story .bable::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-30%) translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 178px 0 0 30px #fff, 327px 34px 0 20px #fff, 480px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -327px 34px 0 20px #fff, -480px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff;
+}
+@media (max-width: 1440px) {
+  #story .bable::after {
+    display: none;
+  }
+}
+#story .container {
+  position: relative;
+  z-index: 1;
 }
 
 section#shop,
@@ -11648,31 +11666,6 @@ section#story .mycard .text {
   font-size: 17px;
 }
 
-#key .bable {
-  position: relative;
-}
-#key .bable::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  top: 0;
-  left: 50%;
-  transform: translateX(-30%) translateY(-50%);
-  border-radius: 50%;
-  box-shadow: 178px 0 0 30px #fff, 327px 34px 0 20px #fff, 480px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -327px 34px 0 20px #fff, -480px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff;
-}
-@media (max-width: 1440px) {
-  #key .bable::after {
-    display: none;
-  }
-}
-#key .container {
-  position: relative;
-  z-index: 1;
-}
 #key h3, #key .h3,
 #key p {
   -ms-writing-mode: tb-lr;
