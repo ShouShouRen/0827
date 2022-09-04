@@ -11581,6 +11581,9 @@ section {
   width: 100%;
 }
 
+#story {
+  background-image: url("../images/about.png");
+}
 #story .bable {
   position: relative;
 }
@@ -11605,6 +11608,19 @@ section {
 #story .container {
   position: relative;
   z-index: 1;
+}
+
+#news {
+  background-image: url("../images/new-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section#contact {
+  height: 100%;
+  padding-bottom: 70px;
 }
 
 section#shop,
@@ -11684,9 +11700,4 @@ section#story .mycard .text {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
-
-section#contact {
-  height: 100%;
-  padding-bottom: 70px;
 }/*# sourceMappingURL=style.css.map */

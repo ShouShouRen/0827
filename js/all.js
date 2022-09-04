@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
     
     $('.submit').click(function() {
-      $('#contact input').val('');
+      $('#contact input, #contact textarea').val('');
     })
 
     $('.modal-footer .clearcart').click(function() {

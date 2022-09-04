@@ -117,6 +117,7 @@ section {
 }
 
 #story {
+    background-image: url('../images/about.png');
     .bable {
         position: relative;
 
@@ -124,6 +125,7 @@ section {
             @media (max-width: 1440px) {
                 display: none;
             }
+
             content: '';
             display: block;
             position: absolute;
@@ -148,12 +150,25 @@ section {
             -1100px 50px 0 89px #fff;
         }
     }
+
     .container {
         position: relative;
         z-index: 1;
     }
 }
 
+#news {
+    background-image: url('../images/new-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#contact {
+    height: 100%;
+    padding-bottom: 70px;
+}
 
 section#shop,
 section#story {
@@ -184,7 +199,8 @@ section#story {
             bottom: 0;
             color: #fff;
         }
-        .ribbon::before{
+
+        .ribbon::before {
             content: "加入購物車";
             padding-top: 20px;
             padding-bottom: 20px;
@@ -192,11 +208,13 @@ section#story {
             display: inline-block;
             font-size: 17px;
             color: #fff;
-             opacity: 0;
-             transition: all .3s ease;
+            opacity: 0;
+            transition: all .3s ease;
         }
+
         &:hover .ribbon {
             width: 250px;
+
             &::before {
                 opacity: 1;
             }
@@ -211,7 +229,6 @@ section#story {
 }
 
 #key {
-
 
     h3,
     p {
@@ -232,9 +249,4 @@ section#story {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-section#contact {
-    height: 100%;
-    padding-bottom: 70px;
 }
