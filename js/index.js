@@ -19,7 +19,6 @@ Vue.createApp({
           content: '飼養在深山裡的放山雞，本農場將雞高溫烘烤製成快速又方便的調理包，加熱僅可使用',
           img: './images/shop-a.jpg',
           price: 360,
-
           amountShow: 0,
         },
         {
