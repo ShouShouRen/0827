@@ -258,12 +258,15 @@ section#story {
     background-image: url('../images/key-a.jpg');
     background-position: center;
     background-size: cover;
-    .col-lg-4 .flex{
+
+    .col-lg-4 .flex {
         transition: all .4s;
     }
-    .col-lg-4 .flex:hover{
+
+    .col-lg-4 .flex:hover {
         box-shadow: 5px 5px 10px #000000;
     }
+
     h3,
     p {
         writing-mode: vertical-lr;
