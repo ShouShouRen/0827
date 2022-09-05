@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>厚德農場</title>
 </head>
@@ -91,19 +92,19 @@
         <section id="story">
             <div class="bable">
                 <div class="container">
-                    <h2 class="text-orange text-center text-[30px] fw-bolder m-0">品牌故事</h2>
+                    <h2 class="text-orange text-center text-[30px] fw-bolder m-0 wow fadeInLeft" data-wow-duration="2s">品牌故事</h2>
                     <div
                         class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
                         <div class=" col-lg-5 col-md-9 p-3">
                             <p>
                                 「厚德自然農場」由一位熱血青農所經營，因為喜歡大自然而從事農業，目標是建立一個無毒無農藥的自然農場，生產出安心的食物來回饋支持厚德小農的朋友們。
                             </p>
-                            <h3 class="text-green text-[22px] fw-bolder py-5">厚德自然農場的由來</h3>
+                            <h3 class="text-green text-[22px] fw-bolder py-5 wow fadeInRight" data-wow-duration="2s">厚德自然農場的由來</h3>
                             <p>
                                 1. 取自易經『厚德載物』啟發，要求自己在種植的品德上，如大地之深厚，讓人們吃的放心。
                                 <br>2. 英文 HODER 諧音，齁得…住，讓支持厚德自然農場的朋友們，在吃的方面可以健康又安心，將食安品質交給我們把關，我們 HODER 住。
                             </p>
-                            <h3 class="text-green text-[22px] fw-bolder py-5">為台灣農業永續發展盡一份心力</h3>
+                            <h3 class="text-green text-[22px] fw-bolder py-5 wow fadeInRight" data-wow-duration="2s">為台灣農業永續發展盡一份心力</h3>
                             <p>
                                 現在台灣農業人力缺乏，鄉下人口老化嚴重，因為很久沒看到年輕人從事農業，在無人承接的情況下，許多
                                 農地漸漸都荒廢了，因此我們期許自己希望能夠種植出好的食物外還能夠幫助
@@ -118,7 +119,7 @@
         </section>
         <section id="news">
             <div class="container">
-                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">最新消息</h2>
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0 wow fadeInDown" data-wow-duration="2s">最新消息</h2>
                 <div
                     class="row justify-content-center pt-[50px] text-[#505050] text-[17px] leading-[30px] tracking-[2px]">
                     <div class="col-sm-12 col-lg-4" v-for="nes in ness">
@@ -138,7 +139,7 @@
         </section>
         <section id="shop" class="bg-lightgreen">
             <div class="container">
-                <h2 class="text-orange text-center text-[30px] fw-bolder m-0">我要購買</h2>
+                <h2 class="text-orange text-center text-[30px] fw-bolder m-0 wow fadeInBottomLeft" data-wow-duration="2s">我要購買</h2>
                 <div class="row pt-[40px]">
                     <div class="col-lg-4" v-for="product in products">
                         <div class="p-2">
@@ -169,7 +170,7 @@
             <div class="container">
                 <h2 class="text-orange text-center text-[30px] fw-bolder m-0">經營理念</h2>
                 <div class="row my-5">
-                    <div class="col-lg-4" v-for="key in keys">
+                    <div class="col-lg-4 wow fadeIn" data-wow-duration="4s" v-for="key in keys">
                         <div class="bg-white flex justify-content-evenly p-5 m-3 rounded-4">
                             <h3 class="pe-3 text-darkblue fw-bolder text-[40px]">{{key.title}}</h3>
                             <div class="line" style="border-left: 3px solid #959942;
@@ -210,11 +211,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="flex justify-content-evenly align-items-start">
+                        <div class="flex justify-content-evenly align-items-start pt-3">
                             <label for="text" class="text-[22px]">
                                 留言:
                             </label>
-                            <textarea id="text" class="w-[500px] h-[300px] form-control rounded-4 p-3"
+                            <textarea id="text" class="w-[250px] h-[200px] lg:w-[500px] lg:h-[300px] form-control rounded-4 p-3"
                                 placeholder="請輸入您的留言" required></textarea>
                         </div>
                     </div>
@@ -289,12 +290,13 @@
             </div>
         </div>
     </div>
-    
-        <i class="fa-solid fa-circle-arrow-up fa-3x position-fixed bottom-20 right-20 cursor-pointer" id="gotop"></i>
+
+    <i class="fa-solid fa-circle-arrow-up fa-3x position-fixed bottom-20 right-20 cursor-pointer" id="gotop"></i>
 </body>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/vue-global.js"></script>
 <script src="./js/jquery.js"></script>
+<script src="./js/wow.min.js"></script>
 <script src="./js/all.js"></script>
 <script src="./js/index.js"></script>
 
