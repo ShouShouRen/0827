@@ -11682,6 +11682,11 @@ section#story .mycard .text {
   font-size: 17px;
 }
 
+#key {
+  background-image: url("../images/key-a.jpg");
+  background-position: center;
+  background-size: cover;
+}
 #key h3, #key .h3,
 #key p {
   -ms-writing-mode: tb-lr;
