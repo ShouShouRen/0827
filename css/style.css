@@ -11687,6 +11687,12 @@ section#story .mycard .text {
   background-position: center;
   background-size: cover;
 }
+#key .col-lg-4 .flex {
+  transition: all 0.4s;
+}
+#key .col-lg-4 .flex:hover {
+  box-shadow: 5px 5px 10px #000000;
+}
 #key h3, #key .h3,
 #key p {
   -ms-writing-mode: tb-lr;
